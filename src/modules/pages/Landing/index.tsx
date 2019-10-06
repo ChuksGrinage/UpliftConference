@@ -6,14 +6,9 @@ import {  } from 'modules/types';
 
 interface LandingPageProps {}
 
-interface LandingPageState {
-}
+interface LandingPageState {}
 
 class LandingPage extends Component<LandingPageProps, LandingPageState> {
-  constructor(props: LandingPageProps) {
-    super(props);
-  }
-
   render() {
     return (
       <MainLayout>

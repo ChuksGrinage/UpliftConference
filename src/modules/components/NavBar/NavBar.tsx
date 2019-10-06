@@ -2,14 +2,7 @@
 import React from "react";
 import styles from './NavBar.module.scss';
 
-interface NavBarProps {}
-interface NavBarState {
-}
-
-export default class NavBar extends React.Component<NavBarProps, NavBarState> {
-  constructor(props: NavBarProps) {
-    super(props);
-  }
+export default class NavBar extends React.Component {
 
   render() {
     return (

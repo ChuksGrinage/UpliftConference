@@ -23,7 +23,7 @@ export default class LandingPageLayout extends React.Component {
             <img src={banner} css={css`width: 100%; height: 100%;`} alt="uplift banner" />
             <Countdown />
         <div className={styles.button}>
-          <a href="https://www.christembassyarlington.us/uplift" target="_blank">Register Now!</a>
+          <a href="https://www.christembassyarlington.us/uplift" rel="noopener noreferrer" target="_blank">Register Now!</a>
         </div>
         <ul className={styles.socialMediaList}>
         <li><a href="#"><FacebookLogo /></a></li>
