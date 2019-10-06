@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Yanone+Kaffeesatz&display=swap');
+
+:root {
+    //COLORS
+
+    --color-primary: #d9cbdf;
+    --color-primary-light: #f4eef7;
+    --color-primary-dark: #c990e2;
+
+    --color-secondary: #47006a;
+    --color-secondary-dark: #1d012b;
+
+
+    --color-white: #fff;
+    --color-black: #000;
+
+    //FONTS
+
+    --default-font: 'Yanone Kaffeesatz', sans-serif;
+
+    --default-font-size: 1.5rem;
+    --default-font-size-medium: 2.6rem;
+    --default-font-size-large: 3rem;  
+    --default-font-size-extra-large: 4rem; 
+}
