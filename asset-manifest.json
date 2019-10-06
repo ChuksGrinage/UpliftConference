@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/UpliftConference/static/css/main.009d9e11.chunk.css",
+    "main.js": "/UpliftConference/static/js/main.926aab1d.chunk.js",
+    "main.js.map": "/UpliftConference/static/js/main.926aab1d.chunk.js.map",
+    "runtime-main.js": "/UpliftConference/static/js/runtime-main.6b97e277.js",
+    "runtime-main.js.map": "/UpliftConference/static/js/runtime-main.6b97e277.js.map",
+    "static/js/2.fd74a2bd.chunk.js": "/UpliftConference/static/js/2.fd74a2bd.chunk.js",
+    "static/js/2.fd74a2bd.chunk.js.map": "/UpliftConference/static/js/2.fd74a2bd.chunk.js.map",
+    "index.html": "/UpliftConference/index.html",
+    "precache-manifest.eab21ae6d0c2660c0db394499b09fa93.js": "/UpliftConference/precache-manifest.eab21ae6d0c2660c0db394499b09fa93.js",
+    "service-worker.js": "/UpliftConference/service-worker.js",
+    "static/css/main.009d9e11.chunk.css.map": "/UpliftConference/static/css/main.009d9e11.chunk.css.map",
+    "static/media/facebook2.6f2c254c.svg": "/UpliftConference/static/media/facebook2.6f2c254c.svg",
+    "static/media/instagram.f24a3859.svg": "/UpliftConference/static/media/instagram.f24a3859.svg",
+    "static/media/Layout.module.scss": "/UpliftConference/static/media/pinkcloud.e9d54794.webp",
+    "static/media/twitter.ea0d4938.svg": "/UpliftConference/static/media/twitter.ea0d4938.svg",
+    "static/media/upliftbanner.webp": "/UpliftConference/static/media/upliftbanner.942e45e0.webp"
+  }
+}
