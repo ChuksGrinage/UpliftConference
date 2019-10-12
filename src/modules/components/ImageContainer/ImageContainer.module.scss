@@ -1,0 +1,46 @@
+
+
+.imageContainer {
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            border-radius: none;
+        }
+
+    & img {
+        // transform: translateX(-4rem) scale(1.4);
+        height: 100%;
+        backface-visibility: hidden;
+        transition: all .5s;
+    }
+
+    & figcaption {
+        color: var(--color-white);
+        font-size: var(--default-font-size-medium);
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        text-transform: uppercase;
+        opacity: 0;
+        backface-visibility: none;
+        text-align: center;
+        transition: all .5s ease-in-out;
+    }
+
+    &:hover img {
+        transform: scale(1.4);
+        filter: blur(3px) brightness(80%);
+    }
+    &:hover figcaption {
+        opacity: 1;
+        transform: translateX(-4rem) scale(1);
+    }
+}

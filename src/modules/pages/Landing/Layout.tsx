@@ -3,13 +3,15 @@
 
 import React from "react";
 
-import { Countdown } from 'modules/components';
+import { Countdown, Story } from 'modules/components';
 
 import styles from './Layout.module.scss';
 import banner from 'assets/images/upliftbanner.webp';
-import { ReactComponent as FacebookLogo } from 'assets/SVG/facebook2.svg'
-import { ReactComponent as InstagramLogo } from 'assets/SVG/instagram.svg'
-import { ReactComponent as TwitterLogo } from 'assets/SVG/twitter.svg'
+import { ReactComponent as FacebookLogo } from 'assets/SVG/facebook2.svg';
+import { ReactComponent as InstagramLogo } from 'assets/SVG/instagram.svg';
+import { ReactComponent as TwitterLogo } from 'assets/SVG/twitter.svg';
+
+import testimonialImage_1 from "assets/images/testimonial_photo_1.webp";
 
 import { css, jsx } from '@emotion/core';
 
@@ -31,6 +33,13 @@ export default class LandingPageLayout extends React.Component {
         <li><a href="#"><TwitterLogo /></a></li>
         </ul>
         </div>
+        <main className={styles.main}>
+          <section className={styles.section_stories}>
+            <h3>Testimonials</h3>
+            <Story imgURL={testimonialImage_1} imgCaption="Alfie Obonna" />
+            <Story imgURL={testimonialImage_1} imgCaption="Alfie Obonna" />
+          </section>
+        </main>
       </div>
     );
   }

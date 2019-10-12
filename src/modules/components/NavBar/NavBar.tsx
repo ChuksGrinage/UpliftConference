@@ -7,7 +7,7 @@ export default class NavBar extends React.Component {
   render() {
     return (
       <div className={styles.navBar}>
-        <h1>Christ Embassy Arlington</h1>
+        {/* <h1>Christ Embassy Arlington</h1> */}
         {/* <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Contact</a></li>
