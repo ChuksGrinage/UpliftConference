@@ -1,0 +1,50 @@
+.quotes {
+    text-align: center;
+    position: relative;
+    // height: 20rem;
+    width: 70%;
+    padding: 5rem;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border-radius: 30rem;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+
+        & svg {
+            fill: lightgrey;
+            position: absolute;
+            width: 10rem;
+            height: 10rem;
+        }
+
+        &__quoteLeft {
+            top: 0;
+            left: 2rem;
+        }
+
+        &__quoteRight {
+            bottom: 0;
+            right: 2rem;
+        }
+
+    &__text {
+        transition: all .2s ease-in-out;
+
+        & p {
+            text-transform: uppercase;
+            font-size: var(--default-font-size-medium);
+            z-index: 100;
+        }
+
+        & span {
+            font-style: italic;
+        }
+    }
+
+
+    &:hover &__text {
+        transform: translateY(-1rem) scale(1.01);
+        z-index: 100;
+        // box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+    }
+}
