@@ -2,9 +2,9 @@
 /** @jsx jsx */
 
 import React from "react";
-// import ScrollAnimation from 'react-animate-on-scroll';
+import ScrollAnimation from 'react-animate-on-scroll';
 
-import { Countdown } from 'modules/components';
+import { Countdown, Quotes } from 'modules/components';
 
 import styles from './Layout.module.scss';
 import banner from 'assets/images/upliftbanner.webp';
@@ -28,9 +28,9 @@ export default class LandingPageLayout extends React.Component {
               <a href="https://www.christembassyarlington.us/uplift" rel="noopener noreferrer" target="_blank">Register Now!</a>
             </div>
             <ul className={styles.socialMediaList}>
-              <li><a href="https://m.facebook.com/groups/upliftconference/#_=_" rel="noopener noreferrer" target="_blank"><FacebookLogo /></a></li>
-              <li><a href="#" rel="noopener noreferrer" target="_blank"><InstagramLogo /></a></li>
-              <li><a href="#" rel="noopener noreferrer" target="_blank"><TwitterLogo /></a></li>
+              <li><a href="https://www.facebook.com/groups/upliftconference" rel="noopener noreferrer" target="_blank"><FacebookLogo /></a></li>
+              <li><a href="https://www.instagram.com/upliftconference/" rel="noopener noreferrer" target="_blank"><InstagramLogo /></a></li>
+              <li><a href="https://twitter.com/ChristEmbassyAT" rel="noopener noreferrer" target="_blank"><TwitterLogo /></a></li>
             </ul>
           </div>
         </div>

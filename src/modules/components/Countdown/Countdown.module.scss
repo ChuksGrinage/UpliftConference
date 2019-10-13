@@ -2,6 +2,8 @@
 .date  {
     font-size: var(--default-font-size-medium);
     width: 40%;
+    transition: all .2s;
+    animation: moveInfromLeft 2s;
 
     & > h3 {
         font-size: var(--default-font-size-extra-large);
@@ -22,4 +24,21 @@
         }
     }
 }
+}
+
+@keyframes moveInfromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30rem);
+  }
+
+  // 80% {
+  //   opacity: 1;
+  //   transform: translateX(-5rem);
+  // }
+
+  to {
+    opacity: 1;
+    transform: translate(0rem);
+  }
 }
