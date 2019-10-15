@@ -2,9 +2,9 @@
 /** @jsx jsx */
 
 import React from "react";
-import ScrollAnimation from 'react-animate-on-scroll';
+// import ScrollAnimation from 'react-animate-on-scroll';
 
-import { Countdown, Quotes } from 'modules/components';
+import { Countdown, CarouselCtnr, YoutubeCtnr } from 'modules/components';
 
 import styles from './Layout.module.scss';
 import banner from 'assets/images/upliftbanner.webp';
@@ -34,8 +34,18 @@ export default class LandingPageLayout extends React.Component {
             </ul>
           </div>
         </div>
-        {/* <main className={styles.main}>
-          <section className={styles.section_testimonials}>
+        <main className={styles.main}>
+          <h3>Impower Your Mind</h3>
+          <section className={styles.media}>
+            <div css={css`width: 45%`}>
+              <CarouselCtnr />
+            </div>
+            <div css={css`width: 45%; height: 100%;`}>
+              <YoutubeCtnr />
+            </div>
+            <div>youtube</div>
+          </section>
+          {/* <section className={styles.section_testimonials}>
             <ScrollAnimation animateIn='flipInY'>
               <h3>Quotes</h3>
             </ScrollAnimation>
@@ -43,8 +53,8 @@ export default class LandingPageLayout extends React.Component {
               <Quotes quote="One of the first things you must learn to do with your mind is to focus it on the right thing." by="Pst. Chris Oyakhilome" />
               <Quotes quote="upward and forward only" by="Yvonne Uwabuike" />
             </div>
-          </section>
-        </main> */}
+          </section> */}
+        </main>
       </div>
     );
   }

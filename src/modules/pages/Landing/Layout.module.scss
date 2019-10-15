@@ -8,7 +8,7 @@
 .banner {
   height: 100rem;
   background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-white));
-  // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   &__content {
     display: flex;
     flex-direction: column;
@@ -68,15 +68,16 @@
 .main {
   width: 100%;
   color: var(--color-white);
+  padding: 10rem;
   // display: flex;
 
   & h3 {
     text-align: center;
     font-size: var(--default-font-size-extra-large);
     text-transform: uppercase;
-    // background-image: linear-gradient(to right, var(--color-primary-dark), var(--color-secondary));
-    // background-clip: text;
-    // color: transparent;
+    background-image: linear-gradient(to right, var(--color-primary-dark), var(--color-secondary));
+    background-clip: text;
+    color: transparent;
     letter-spacing: 2rem;
     margin-bottom: 10rem;
     // transition: all .2s;
@@ -90,6 +91,12 @@
   // &:nth-child(even) {
   //   align-content: flex-end;
   // }
+}
+
+.media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
