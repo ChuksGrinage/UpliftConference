@@ -19,12 +19,12 @@ interface CarouselCtnrProps {
 
 const items = [
     {
-        src: `${photo1}`,
+        src: `${photo2}`,
         altText: 'Slide 1',
         caption: 'Music, dance and much more'
     },
     {
-        src: `${photo2}`,
+        src: `${photo1}`,
         altText: 'Slide 2',
         caption: 'Slide 2'
     },

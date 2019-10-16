@@ -4,7 +4,7 @@
 import React from "react";
 // import ScrollAnimation from 'react-animate-on-scroll';
 
-import { Countdown, CarouselCtnr, YoutubeCtnr } from 'modules/components';
+import { Countdown, CarouselCtnr, YoutubeCtnr, Quotes } from 'modules/components';
 
 import styles from './Layout.module.scss';
 import banner from 'assets/images/upliftbanner.webp';
@@ -24,9 +24,9 @@ export default class LandingPageLayout extends React.Component {
           <div className={styles.banner__content}>
             <img src={banner} css={css`width: 100%; height: 100%;`} alt="uplift banner" />
             <Countdown date={new Date("November 02, 2019 07:00:00")} />
-            <div className={styles.button}>
+            {/* <div className={styles.button}>
               <a href="https://www.christembassyarlington.us/uplift" rel="noopener noreferrer" target="_blank">Register Now!</a>
-            </div>
+            </div> */}
             <ul className={styles.socialMediaList}>
               <li><a href="https://www.facebook.com/groups/upliftconference" rel="noopener noreferrer" target="_blank"><FacebookLogo /></a></li>
               <li><a href="https://www.instagram.com/upliftconference/" rel="noopener noreferrer" target="_blank"><InstagramLogo /></a></li>
@@ -35,15 +35,22 @@ export default class LandingPageLayout extends React.Component {
           </div>
         </div>
         <main className={styles.main}>
-          <h3>Impower Your Mind</h3>
           <section className={styles.media}>
-            <div css={css`width: 45%`}>
-              <CarouselCtnr />
+            <h3>Impower Your Mind</h3>
+            <div className={styles.media_content}>
+              <div css={css`width: 45%`}>
+                <CarouselCtnr />
+              </div>
+              <div css={css`width: 45%; height: 100%;`}>
+                <YoutubeCtnr />
+              </div>
+              <div>youtube</div>
             </div>
-            <div css={css`width: 45%; height: 100%;`}>
-              <YoutubeCtnr />
-            </div>
-            <div>youtube</div>
+            <Quotes />
+          </section>
+          <section className={styles.register}>
+            <h3>Sign Up Here! Its Free!</h3>
+            <embed width="100%" height="70%" src="https://www.eventbrite.com/checkout-external?eid=73044472985&parent=https%3A%2F%2Fwww.christembassyarlington.us%2Fuplift" />
           </section>
           {/* <section className={styles.section_testimonials}>
             <ScrollAnimation animateIn='flipInY'>
