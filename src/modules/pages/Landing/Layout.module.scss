@@ -120,7 +120,7 @@
 
 .register {
   padding: 15rem;
-  margin-top: 10rem;
+  margin-top: 15rem;
   width: 100%;
   height: 100rem;
   background-color: var(--color-primary);
@@ -141,13 +141,8 @@
   }
 }
 
-.quoteCtnr {
-  display: flex;
-  flex-direction: column;
-  
-  &:nth-child(even) {
-    align-content: flex-end;
-  }
+.quotes {
+  margin: 10rem;
 }
 
 // @media only screen and (max-width: 700px) {

@@ -46,7 +46,12 @@ export default class LandingPageLayout extends React.Component {
               </div>
               <div>youtube</div>
             </div>
-            <Quotes />
+          </section>
+          <section className={styles.quotes}>
+            <Quotes
+              quote="One of the first things you must learn to do with your mind is to focus it on the right thing."
+              by="Pst. Chris Oyakhilome"
+            />
           </section>
           <section className={styles.register}>
             <h3>Sign Up Here! Its Free!</h3>
