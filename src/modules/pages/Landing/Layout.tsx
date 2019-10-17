@@ -36,7 +36,7 @@ export default class LandingPageLayout extends React.Component {
         </div>
         <main className={styles.main}>
           <section className={styles.media}>
-            <h3>Impower Your Mind</h3>
+            <h3>Empower Your Mind</h3>
             <div className={styles.media_content}>
               <div css={css`width: 45%`}>
                 <CarouselCtnr />

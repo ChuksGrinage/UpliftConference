@@ -22,7 +22,7 @@ export default class YoutubeCtnr extends React.Component<YoutubeCtnrProps> {
                     url='https://www.youtube.com/watch?v=8qacyv6vC-Q'
                     width='100%'
                     height='100%'
-                    playing
+                    // playing
                 />
             </div>
         )
