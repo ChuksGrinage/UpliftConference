@@ -1,31 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c516eb028b9179967cef43bd186d8d26",
+    "revision": "997b3e1fbe2a7ae10f53019b9781cbef",
     "url": "/UpliftConference/index.html"
   },
   {
-    "revision": "b431475683af409552d4",
+    "revision": "00cd542b9d808971d1a1",
     "url": "/UpliftConference/static/css/2.5cbbff98.chunk.css"
   },
   {
-    "revision": "54dfb7a05a13463eee48",
-    "url": "/UpliftConference/static/css/main.bee1ace8.chunk.css"
+    "revision": "06e2f08dcf55134d52de",
+    "url": "/UpliftConference/static/css/main.9daf3a23.chunk.css"
   },
   {
-    "revision": "b431475683af409552d4",
-    "url": "/UpliftConference/static/js/2.915fb1d1.chunk.js"
+    "revision": "00cd542b9d808971d1a1",
+    "url": "/UpliftConference/static/js/2.93315d21.chunk.js"
   },
   {
-    "revision": "54dfb7a05a13463eee48",
-    "url": "/UpliftConference/static/js/main.d357ec4f.chunk.js"
+    "revision": "06e2f08dcf55134d52de",
+    "url": "/UpliftConference/static/js/main.f7ab446a.chunk.js"
   },
   {
     "revision": "ce182363eaafeae8ee75",
     "url": "/UpliftConference/static/js/runtime-main.6b97e277.js"
-  },
-  {
-    "revision": "dab01b8b955742cbfdd747c206959b02",
-    "url": "/UpliftConference/static/media/Pastor-Chris-Oyakhilome-1.dab01b8b.webp"
   },
   {
     "revision": "6f2c254c84b384fef1063a137adc55ad",
