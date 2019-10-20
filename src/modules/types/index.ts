@@ -10,3 +10,8 @@ export interface Pokemon {
     type: string;
     moves: []
 }
+
+export interface Query {
+    mobile: boolean,
+    desktop: boolean
+}

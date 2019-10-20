@@ -13,16 +13,31 @@ import { ReactComponent as InstagramLogo } from 'assets/SVG/instagram.svg';
 import { ReactComponent as TwitterLogo } from 'assets/SVG/twitter.svg';
 
 import { css, jsx } from '@emotion/core';
+import { ContainerQuery } from 'react-container-query';
 
+interface LandingPageLayoutProps {
+}
 
-export default class LandingPageLayout extends React.Component {
+const query = {
+  mobile: {
+    minWidth: 320,
+    maxWidth: 599
+  },
+  desktop: {
+    minWidth: 600,
+  }
+};
+
+export default class LandingPageLayout extends React.Component<LandingPageLayoutProps> {
 
   render() {
     return (
+      <ContainerQuery query={query}>
+        {(params) => (
       <div className={styles.layout}>
         <div className={styles.banner}>
           <div className={styles.banner__content}>
-            <img src={banner} css={css`width: 100%; height: 100%;`} alt="uplift banner" />
+            <img src={banner} alt="uplift banner" />
             <Countdown date={new Date("November 02, 2019 07:00:00")} />
             {/* <div className={styles.button}>
               <a href="https://www.christembassyarlington.us/uplift" rel="noopener noreferrer" target="_blank">Register Now!</a>
@@ -38,13 +53,16 @@ export default class LandingPageLayout extends React.Component {
           <section className={styles.media}>
             <h3>Empower Your Mind</h3>
             <div className={styles.media_content}>
-              <div css={css`width: 45%`}>
-                <CarouselCtnr />
-              </div>
-              <div css={css`width: 45%; height: 100%;`}>
+              {params.desktop && 
+                ( 
+                  <div css={css`width: 45%`}>
+                    <CarouselCtnr />
+                  </div>
+                )
+              }
+              <div className={styles.youtubeCtnr}>
                 <YoutubeCtnr />
               </div>
-              <div>youtube</div>
             </div>
           </section>
           <section className={styles.quotes}>
@@ -67,7 +85,9 @@ export default class LandingPageLayout extends React.Component {
             </div>
           </section> */}
         </main>
-      </div>
+          </div>
+        )}
+      </ContainerQuery>
     );
   }
 }

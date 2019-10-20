@@ -20,11 +20,10 @@
     img {
       width: 50%;
       height: 30rem;
-      transition: all .2s;
-      animation: moveInfromRight 2s;
     }
   }
 }
+
 
 .button {
   font-size: var(--default-font-size-medium);
@@ -68,8 +67,6 @@
 .main {
   width: 100%;
   color: var(--color-white);
-  // padding: 10rem;
-  // display: flex;
 }
 
 .media {
@@ -83,12 +80,6 @@
     letter-spacing: 2rem;
     margin-top: 10rem;
     margin-bottom: 10rem;
-    // transition: all .2s;
-
-    // &:hover {
-    //     transform: scale(1.2); 
-    //     text-shadow: .5rem 1rem 2rem rgba(black, .5);
-    // }
   }
 
   &_content {
@@ -97,26 +88,14 @@
   align-items: center;
   padding: 0 10rem;
 
+    & .youtubeCtnr {
+      width: 45%;
+      height: 100%;
+    }
+
   }
 }
 
-
-// .section_testimonials {
-//   height: 100rem;
-//   margin-top: -30rem;
-//   padding: 15rem 30rem 10rem;
-
-//     // background-image: url("~assets/images/pinkcloud.webp");
-//     // background-size: cover;
-//     // background-repeat: no-repeat;
-//     // background-position: 0px 0px;
-//     // animation: animatedBackground 30s linear infinite;
-
-
-// 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-// 	background-size: 400% 400%;
-// 	animation: gradientBG 15s ease infinite;
-// }
 
 .register {
   padding: 15rem;
@@ -137,40 +116,79 @@
     letter-spacing: 2rem;
     margin-bottom: 10rem;
   }
-
-  & embed {
-    // transform: skewY(7deg);
-  }
 }
 
 .quotes {
   margin: 10rem;
 }
 
-// @media only screen and (max-width: 700px) {
-//   .layout {
-//   }
-// }
 
 
-// @keyframes animatedBackground {
-// 	0% { background-position: 0 0; }
-// 	50% { background-position: 0 100%; }
-// 	100% { background-position: 0 0;}
-// }
+@media only screen and (max-width: 700px) {
+  .banner {
+    padding: 0;
 
+    &__content {
+      & img {
+        width: 80%;
+        height: 10rem;
+      }
+    }
+  }
 
-@keyframes gradientBG {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  .media {
+    & h3 {
+      font-size: var(--default-font-size-medium);
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+    }
+
+      &_content {
+        padding: 0;
+        & .youtubeCtnr {
+          width: 100%;
+          height: 100%;
+        }
+    }
+
+    // &_content {
+    //   display: inline-block;
+    // }
+  }
+
+  .register {
+    padding: 15rem 0 0 0;
+    margin-top: 0;
+    height: 80rem;
+
+    & h3 {
+      font-size: var(--default-font-size-medium);
+      letter-spacing: 1rem;
+    }
+
+    // & embed {
+    //   height: 40rem;
+    // }
+  }
+
+  .quotes {
+    margin: 5rem 0 0 0;
+  }
 }
+
+
+
+// @keyframes gradientBG {
+// 	0% {
+// 		background-position: 0% 50%;
+// 	}
+// 	50% {
+// 		background-position: 100% 50%;
+// 	}
+// 	100% {
+// 		background-position: 0% 50%;
+// 	}
+// }
 
 
 @keyframes pulse {
@@ -184,53 +202,5 @@
 
   100% {
     box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
-  }
-}
-
-@keyframes moveInfromBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(30rem);
-  }
-
-  // 80% {
-  //   opacity: 1;
-  //   transform: translateY(-5rem);
-  // }
-
-  100% {
-    opacity: 1;
-    transform: translate(0rem);
-  }
-}
-
-@keyframes moveInfromRight {
-  from {
-    opacity: 0;
-    transform: translateX(30rem);
-  }
-
-  // 80% {
-  //   opacity: 1;
-  //   transform: translateX(-5rem);
-  // }
-
-  to {
-    opacity: 1;
-    transform: translateX(0)
-  }
-}
-
-@keyframes grow {
-  0% {
-    transform: scale(0);
-  }
-
-  50% {
-    transform: scale(1.5);
-  }
-
-  100% {
-    transform: scale(1)
   }
 }

@@ -5,7 +5,7 @@ import {
     CarouselItem,
     CarouselControl,
     CarouselIndicators,
-    CarouselCaption
+    // CarouselCaption
 } from 'reactstrap';
 
 import photo1 from 'assets/images/photo_3.webp';

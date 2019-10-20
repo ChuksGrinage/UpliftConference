@@ -28,14 +28,6 @@
         display: flex;
         justify-content: space-evenly;
 
-        // & div {
-        //     transition: all .2s ease-in-out;
-            
-        //     &:hover {
-        //         transform: scale(1.5) skewY(-30deg);
-        //     }
-        // }
-
         & div {
             padding: 0 5rem;
             flex: 1;
@@ -63,5 +55,15 @@
             justify-content: space-between;
         }
 
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .footer {
+        padding: 1rem 2rem;
+
+        &_bottom {
+            flex-direction: column;
+        }
     }
 }

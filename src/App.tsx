@@ -4,11 +4,12 @@ import './App.scss';
 
 import "animate.css/animate.min.css";
 
+
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <LandingPage />
-    </div>
+        <div className="App">
+          <LandingPage />
+        </div>
   );
 }
 
