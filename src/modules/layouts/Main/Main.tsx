@@ -25,7 +25,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
     return (
       <ContainerQuery query={query}>
         {(params) => (
-        <div css={css`padding: ${params.mobile ? 0: '5rem'}`}>
+        <div >
           <NavBar />
           {children}
           <Footer />

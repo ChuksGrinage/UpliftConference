@@ -6,9 +6,14 @@
 }
 
 .banner {
-  height: 80vh;
+  height: 100vh;
   background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-white));
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  // background-image: url('/src/assets/images/pinky.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   &__content {
     display: flex;
     flex-direction: column;
@@ -44,18 +49,33 @@
 
 .socialMediaList {
   list-style: none;
+  display: flex;
+  justify-content: center;
 
   & > li {
-    width: 5rem;
-    height: 5rem;
+    width: 20rem;
+    height: 20rem;
     display: inline-block;
     transition: all .4s;
     margin: 0 1.5rem;
     transition: all .2s;
-    animation: grow 1s;
+    background-color: var(--color-primary-dark);
+    padding: 3rem;
+    border-radius: 50%;
+    // filter: grayscale(100%);
+
+    & svg {
+      filter: brightness(0) invert(1);
+      transition: all .4s;
+    }
 
     &:hover {
-      transform: rotate(-20deg) scale(1.8);
+      transform:  scale(1.5);
+      background-color: var(--color-white);
+
+      & svg {
+        filter: brightness(1) invert(0);;
+      }
     }
   }
 
@@ -69,7 +89,7 @@
   color: var(--color-white);
 }
 
-.media {
+.aboutUs {
   & > h3 {
     text-align: center;
     font-size: var(--default-font-size-extra-large);
@@ -83,16 +103,78 @@
   }
 
   &_content {
+    padding: 0 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15rem;
+
+
+    &_text {
+      color: var(--color-secondary);
+      width: 45%;
+       & h4 {
+         font-weight: bold;
+         font-size: var(--default-font-size-large);
+         margin-bottom: 2rem;
+       }
+       & p {
+         font-size: var(--default-font-size);
+         line-height: 3rem;
+       }
+    }
+
+    &_img {
+      height: 69rem;
+      width: 45%;
+    }
+  }
+}
+
+.media {
+  background-color: var(--color-primary);
+  transform: skewY(-7deg);
+  box-shadow: inset 0px 2px 15px 6px rgba(0,0,0,0.7);
+  padding: 15rem;
+
+  & > * {
+      transform: skewY(7deg);
+    }
+
+  & > h3 {
+    text-align: center;
+    font-size: var(--default-font-size-extra-large);
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  &_content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 10rem;
 
     & .youtubeCtnr {
-      width: 45%;
-      height: 100%;
+      width: 70%;
+      height: 70%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
     }
 
+  }
+}
+
+.social {
+  & > h3 {
+    text-align: center;
+    font-size: var(--default-font-size-extra-large);
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, var(--color-primary-dark), var(--color-secondary));
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
   }
 }
 
