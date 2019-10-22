@@ -19,7 +19,7 @@ export default class YoutubeCtnr extends React.Component<YoutubeCtnrProps> {
             <div css={css`position: relative; padding-top: 56.25%;`}>
                 <ReactPlayer
                     css={css`position: absolute; top: 0; left: 0;`}
-                    url='https://www.youtube.com/watch?v=8qacyv6vC-Q'
+                    url='https://www.youtube.com/watch?v=8qacyv6vC-Q&list=PLPwnp65QthXkty3laFVkZCXB6wDizKZI_'
                     width='100%'
                     height='100%'
                     // playing

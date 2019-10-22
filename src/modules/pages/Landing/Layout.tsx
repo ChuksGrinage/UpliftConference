@@ -53,7 +53,7 @@ export default class LandingPageLayout extends React.Component<LandingPageLayout
           <section className={styles.media}>
             <h3>Empower Your Mind</h3>
             <div className={styles.media_content}>
-              {params.desktop && 
+              {true && 
                 ( 
                   <div css={css`width: 45%`}>
                     <CarouselCtnr />
@@ -64,6 +64,9 @@ export default class LandingPageLayout extends React.Component<LandingPageLayout
                 <YoutubeCtnr />
               </div>
             </div>
+          </section>
+          <section className={styles.experience}>
+            <h3>An Experience of a life time</h3>
           </section>
           <section className={styles.quotes}>
             <Quotes
