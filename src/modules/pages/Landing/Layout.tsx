@@ -24,10 +24,10 @@ interface LandingPageLayoutProps {
 const query = {
   mobile: {
     minWidth: 320,
-    maxWidth: 599
+    maxWidth: 1000
   },
   desktop: {
-    minWidth: 600,
+    minWidth: 1024,
   }
 };
 
