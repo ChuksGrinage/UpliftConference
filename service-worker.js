@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/UpliftConference/precache-manifest.347f42ab7f4e5a30e72b117d903d6368.js"
+  "/UpliftConference/precache-manifest.6e60054f72fb0ea47e74d508f84f45be.js"
 );
 
 self.addEventListener('message', (event) => {
