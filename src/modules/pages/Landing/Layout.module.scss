@@ -57,6 +57,7 @@
   list-style: none;
   display: flex;
   justify-content: center;
+  margin-bottom: 15rem;
 
   & > li {
     width: 20rem;
@@ -109,6 +110,10 @@
     margin-top: 10rem;
     margin-bottom: 10rem;
   }
+
+  // &_content:nth-child(odd) {
+  //   flex-direction: row-reverse;
+  // }
 
   &_content {
     padding: 0 30rem;
@@ -200,7 +205,7 @@
 
 .register {
   padding: 15rem;
-  margin-top: 15rem;
+  // margin-top: 15rem;
   width: 100%;
   height: 100rem;
   background-color: var(--color-primary);
@@ -222,7 +227,7 @@
   .banner {
     padding: 0;
 
-    &__content {
+    &_content {
       & img {
         width: 80%;
         height: 10rem;
@@ -230,16 +235,62 @@
     }
   }
 
-  .media {
+  .aboutUs {
     & h3 {
       font-size: var(--default-font-size-medium);
+      letter-spacing: 1rem;
       margin-top: 2rem;
-      margin-bottom: 5rem;
+      margin-bottom: 0;
+    }
+
+  //   & &_content:nth-child(odd) {
+  //   flex-direction: row;
+  // }
+
+    &_content {
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+
+    &_text {
+      color: var(--color-secondary);
+      width: 90%;
+      margin: 5rem 0;
+       & h4 {
+         font-weight: bold;
+         font-size: var(--default-font-size);
+         margin-bottom: 2rem;
+       }
+       & p {
+         font-size: var(--default-font-size);
+         line-height: 2rem;
+       }
+    }
+
+    &_img {
+      height: 20rem;
+      width: 45%;
+    }
+  }
+  }
+
+  .media {
+    padding: 1rem;
+    height: 30rem;
+    & h3 {
+      font-size: var(--default-font-size);
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      letter-spacing: 1rem;
     }
 
       &_content {
         padding: 0;
         flex-direction: column;
+        margin-bottom: 2rem;
         & .youtubeCtnr {
           width: 100%;
           height: 100%;
@@ -247,20 +298,39 @@
     }
   }
 
+  .social {
+    margin: 5rem 0;
+    & > h3 {
+        font-size: var(--default-font-size);
+        letter-spacing: 1rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.socialMediaList {
+
+  & > li {
+    width: 3rem;
+    height: 3rem;
+    transition: all .4s;
+    margin: 0 .5rem;
+    transition: all .2s;
+    padding: .5rem;
+  }
+}
+
   .register {
-    padding: 15rem 0 0 0;
+    padding: 5rem 0 0 0;
     margin-top: 0;
-    height: 80rem;
+    height: 60rem;
 
     & h3 {
-      font-size: var(--default-font-size-medium);
+      font-size: var(--default-font-size);
       letter-spacing: 1rem;
+      margin-bottom: 2rem;
     }
 
-  }
-
-  .quotes {
-    margin: 5rem 0 0 0;
   }
 }
 

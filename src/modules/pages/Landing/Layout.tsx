@@ -46,7 +46,7 @@ export default class LandingPageLayout extends React.Component<LandingPageLayout
               <a href="https://www.christembassyarlington.us/uplift" rel="noopener noreferrer" target="_blank">Register Now!</a>
             </div> */}
             <div className={styles.arrow}>
-              <span>Scroll down</span>
+              <span>{params.desktop ? "Scroll down" : "Swipe"}</span>
               <DownArrow />
             </div>
           </div>
