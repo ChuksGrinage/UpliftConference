@@ -56,3 +56,9 @@
     transform: rotateY(0);
     }
 }
+
+@media only screen and (max-width: 1000px) {
+  .card_back p {
+    font-size: var(--default-font-size);
+  }
+}

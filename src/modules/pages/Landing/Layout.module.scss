@@ -223,9 +223,10 @@
 
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .banner {
     padding: 0;
+    height: 70vh;
 
     &_content {
       & img {
@@ -309,6 +310,7 @@
 }
 
 .socialMediaList {
+  margin-bottom: 5rem;
 
   & > li {
     width: 3rem;
@@ -349,19 +351,19 @@
 // }
 
 
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 var(--color-secondary);
-  }
+// @keyframes pulse {
+//   0% {
+//     box-shadow: 0 0 0 0 var(--color-secondary);
+//   }
 
-  70% {
-    box-shadow: 0 0 0 4rem rgba(204, 169, 44, 0);
-  }
+//   70% {
+//     box-shadow: 0 0 0 4rem rgba(204, 169, 44, 0);
+//   }
 
-  100% {
-    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
-  }
-}
+//   100% {
+//     box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+//   }
+// }
 
 @keyframes float {
 	0% {
