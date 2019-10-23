@@ -1,30 +1,36 @@
 
 
-.layout { 
-  // background-image: linear-gradient(var(--color-primary), var(--color-white));
-  // padding: 5rem;
-}
-
 .banner {
   height: 100vh;
-  background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-white));
+  background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-white)),;
   // background-image: url('/src/assets/images/pinky.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  &__content {
+  &_content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    height: 90%;
+    height: 100%;
 
     img {
       width: 50%;
       height: 30rem;
+    }
+
+    & .arrow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+        animation: float 2s infinite;
+
+      & span {
+        font-size: var(--default-font-size-medium);
+      }
     }
   }
 }
@@ -59,7 +65,8 @@
     transition: all .4s;
     margin: 0 1.5rem;
     transition: all .2s;
-    background-color: var(--color-primary-dark);
+    // background-color: var(--color-primary-dark);
+    background-color: lightslategray;
     padding: 3rem;
     border-radius: 50%;
     // filter: grayscale(100%);
@@ -71,7 +78,8 @@
 
     &:hover {
       transform:  scale(1.5);
-      background-color: var(--color-white);
+      // background-color: var(--color-white);
+      background-color: transparent;
 
       & svg {
         filter: brightness(1) invert(0);;
@@ -132,14 +140,18 @@
 }
 
 .media {
-  background-color: var(--color-primary);
-  transform: skewY(-7deg);
-  box-shadow: inset 0px 2px 15px 6px rgba(0,0,0,0.7);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#d9cbdf, 0.8),
+      rgba(#c990e2, 0.8)),
+  url(../../../assets/images/pink_cloud.jpg);
+  background-attachment: fixed;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: static;
+  // transform: skewY(-7deg);
+  // box-shadow: inset 0px 2px 15px 6px rgba(0,0,0,0.7);
   padding: 15rem;
-
-  & > * {
-      transform: skewY(7deg);
-    }
 
   & > h3 {
     text-align: center;
@@ -152,13 +164,14 @@
   &_content {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 0 10rem;
 
     & .youtubeCtnr {
       width: 70%;
       height: 70%;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
     }
 
   }
@@ -176,6 +189,12 @@
     margin-top: 10rem;
     margin-bottom: 10rem;
   }
+
+    & .carouselCtnr {
+      width: 40%;
+      height: 40%;
+      // box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+    }
 }
 
 
@@ -185,11 +204,8 @@
   width: 100%;
   height: 100rem;
   background-color: var(--color-primary);
-  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-  // transform: skewY(-7deg);
 
   & > h3 {
-    // transform: skewY(7deg);
     font-weight: bold;
     text-align: center;
     font-size: var(--default-font-size-extra-large);
@@ -198,10 +214,6 @@
     letter-spacing: 2rem;
     margin-bottom: 10rem;
   }
-}
-
-.quotes {
-  margin: 10rem;
 }
 
 
@@ -233,10 +245,6 @@
           height: 100%;
         }
     }
-
-    // &_content {
-    //   display: inline-block;
-    // }
   }
 
   .register {
@@ -249,9 +257,6 @@
       letter-spacing: 1rem;
     }
 
-    // & embed {
-    //   height: 40rem;
-    // }
   }
 
   .quotes {
@@ -286,4 +291,16 @@
   100% {
     box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
   }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
