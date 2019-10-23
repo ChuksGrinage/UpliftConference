@@ -61,14 +61,18 @@ export default class LandingPageLayout extends React.Component<LandingPageLayout
                   The UPLIFT Conference is for youth ages 15 and up to adulthood and is designed to equip them with relevant information from the Word of God to make them successful in their sphere of life. There will be vendors, relevant breakout sessions, prizes and food trucks. It is November 2nd from 1pm-4pm.
                 </p>
               </div>
-                <div className={styles.aboutUs_content_img}>
-                    <Card imgURLFront={photo2} imgURLBack={photo1} backText="...truly inspiring" />
-                </div>
+                { params.desktop && 
+                  <div className={styles.aboutUs_content_img}>
+                      <Card imgURLFront={photo2} imgURLBack={photo1} backText="...truly inspiring" />
+                  </div>
+                }
             </div>
                 <div className={styles.aboutUs_content}>
-                  <div className={styles.aboutUs_content_img}>
-                    <Card imgURLFront={photo3} imgURLBack={photo4} backText="... one in a life time experience" />
-                  </div>
+                  { params.desktop && 
+                    <div className={styles.aboutUs_content_img}>
+                      <Card imgURLFront={photo3} imgURLBack={photo4} backText="... one in a life time experience" />
+                    </div>
+                  }
                   <div className={styles.aboutUs_content_text}>
                     <h4>Want to get involved?</h4>
                     <p>
