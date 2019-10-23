@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a4d9bb2cd8f5a1f51797575f4406f84b",
+    "revision": "58ce46cf170121e0c20190a45d2f8639",
     "url": "/UpliftConference/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/UpliftConference/static/css/2.7de56fa1.chunk.css"
   },
   {
-    "revision": "34b5a77a69114e92e866",
-    "url": "/UpliftConference/static/css/main.fcc59d98.chunk.css"
+    "revision": "76dbf640987b704a84b4",
+    "url": "/UpliftConference/static/css/main.b19fc60b.chunk.css"
   },
   {
     "revision": "0b9c96a9fbb63dcbed1f",
     "url": "/UpliftConference/static/js/2.c1df48e0.chunk.js"
   },
   {
-    "revision": "34b5a77a69114e92e866",
-    "url": "/UpliftConference/static/js/main.8e40af5b.chunk.js"
+    "revision": "76dbf640987b704a84b4",
+    "url": "/UpliftConference/static/js/main.551511f7.chunk.js"
   },
   {
     "revision": "ce182363eaafeae8ee75",
