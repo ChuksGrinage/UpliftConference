@@ -83,7 +83,7 @@
       background-color: transparent;
 
       & svg {
-        filter: brightness(1) invert(0);;
+        filter: brightness(1) invert(0);
       }
     }
   }
@@ -318,6 +318,11 @@
     margin: 0 .5rem;
     transition: all .2s;
     padding: .5rem;
+    background-color: transparent;
+
+     & svg {
+        filter: brightness(1) invert(0);
+      }
   }
 }
 
