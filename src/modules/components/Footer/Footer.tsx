@@ -41,7 +41,7 @@ const Footer: React.FC<FooterProps> = () => {
                 </div>
                 <div className={styles.footer_copyright_bottom}>
                     <p>Copyright © 2019 The Uplift Conference - All Rights Reserved.</p>
-                    <p>Created by Chuks Grinage</p>
+                    <p>Created by Jonah Grinage</p>
                 </div>
             </section>
         </div>
